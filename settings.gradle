@@ -1,0 +1,23 @@
+pluginManagement {
+	repositories {
+		maven {
+			name = 'Fabric'
+			url = 'https://maven.fabricmc.net/'
+		}
+		maven {
+			name = 'SpongePowered'
+			url = 'https://repo.spongepowered.org/repository/maven-public/'
+		}
+		mavenCentral()
+		gradlePluginPortal()
+	}
+}
+
+rootProject.name = 'blahaj'
+include(
+	'platform-fabric-1.18',
+	'platform-fabric-1.19',
+	'platform-fabric-1.19.3',
+	'platform-fabric-1.20.1',
+	'platform-fabric-1.20.4'
+)
